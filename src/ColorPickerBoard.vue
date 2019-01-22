@@ -1,7 +1,7 @@
 <template>
     <div class="component color-picker">
         <div class="form-group">
-            <label><span>Color Picker Board</span></label>
+            <label><span>{{ label }}</span></label>
             <div class="input-wrapper">
                 <input type="text" v-model="selectedColor" class="text-input" />
                 <div class="color-swatch" v-bind:style="{ backgroundColor: selectedColor }"></div>
@@ -35,6 +35,10 @@
             defaultColor: {
                 type: String,
                 required: true
+            },
+            label: {
+                type: String,
+                default: "Color picker"
             }
         },
         data: function(){
