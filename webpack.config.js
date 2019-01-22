@@ -47,7 +47,7 @@ module.exports = [
     }
   }),
   merge(config, {
-    entry: path.resolve(__dirname + '/src/VueColorPickerBoard.vue'),
+    entry: path.resolve(__dirname + '/src/ColorPickerBoard.vue'),
     output: {
       filename: 'vue-color-picker-board.js',
       libraryTarget: 'umd',

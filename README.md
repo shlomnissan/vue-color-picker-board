@@ -4,6 +4,8 @@ A [Vue.js](https://vuejs.org/) color picker component designed for humans.
 
 Inspired by [Svbtle](https://svbtle.com/).
 
+![Color picker board example](https://s3-us-west-2.amazonaws.com/betamark/6a363e608fc7.gif)
+
 ## Installation
 
 ```js
@@ -33,5 +35,22 @@ import VueColorPickerBoard from 'vue-color-picker-board';
 Once installed, it can be used in a template as simply as:
 
 ```html
-<color-picker-board></color-picker-board>
+<color-picker-board default-color="#00AAFF"
+                    :width="800"
+                    :height="100"
+                    @onSelection="colorSelection">
+</color-picker-board>
 ```
+
+## Properties
+**default-color** | *required* | string
+The default color that will be shown once the component is mounted.
+Example: `default-color="#00AAFF"`
+
+**width** | optional | number | default: 800
+The width of the color picker board in pixels.
+Example: `:width="800"`
+
+**height** | optional | number | default: 100
+The height of the color picker board in pixels.
+Example: `:height="600"`

@@ -4,7 +4,7 @@
   "description": "Vue color picker component for humans",
   "main": "dist/vue-color-picker-board.js",
   "scripts": {
-    "build": "rimraf ./dist && webpack --config ./webpack.config.js"
+    "start": "rimraf ./dist && webpack --watch --config ./webpack.config.js"
   },
   "author": "Shlomi Nissan (Betamark)",
   "license": "MIT",
@@ -20,6 +20,9 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-2": "^6.11.0",
     "babel-runtime": "^6.9.2",
+    "css-loader": "0.28.11",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "rimraf": "^2.6.1",
     "vue": "^2.2.1",
     "vue-html-loader": "^1.2.3",
