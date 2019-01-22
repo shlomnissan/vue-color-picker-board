@@ -41,21 +41,3 @@ Once installed, it can be used in a template as simply as:
                     @onSelection="colorSelection">
 </color-picker-board>
 ```
-
-## Properties
-**default-color** | *required* | string<br/>
-The default color that will be shown once the component is mounted.<br/>
-Example: `default-color="#00AAFF"`
-
-**width** | optional | number | default: 800<br/>
-The width of the color picker board in pixels.<br/>
-Example: `:width="800"`
-
-**height** | optional | number | default: 100<br/>
-The height of the color picker board in pixels.<br/>
-Example: `:height="600"`
-
-
-**label** | optional | string | default: Color picker<br/>
-The input label.<br/>
-Example: `label="My color picker"`
