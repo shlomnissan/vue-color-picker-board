@@ -1,12 +1,5 @@
 <template>
     <div class="component color-picker">
-        <div class="form-group">
-            <label><span>{{ label }}</span></label>
-            <div class="input-wrapper">
-                <input type="text" v-model="selectedColor" class="text-input" />
-                <div class="color-swatch" v-bind:style="{ backgroundColor: selectedColor }"></div>
-            </div>
-        </div>
         <canvas id="canvas" 
                 @mousemove="onMouseMove" 
                 @click="onClick" 
@@ -34,12 +27,8 @@
             },
             defaultColor: {
                 type: String,
-                required: true
+                default: "#4BBADD"
             },
-            label: {
-                type: String,
-                default: "Color picker"
-            }
         },
         data: function(){
             return {
@@ -61,10 +50,11 @@
                 const canvasX = evt.pageX - this.canvas.offsetLeft;
                 const canvasY = evt.pageY - this.canvas.offsetTop;
                 const yPosition = (this.canvas.height - canvasY) / this.canvas.height * 100;
+                const percent = Math.round((this.canvas.width - canvasX) / this.canvas.width * 100);
 
-                const h = Math.round((this.canvas.width - canvasX) / this.canvas.width * 100);
-                const s = Math.round(100 - (yPosition / 3 + 30));
-                const l = Math.round(yPosition / 3 + 35);
+                const h = 3.6 * percent;
+                const s = Math.round((yPosition / 3 + 50));
+                const l = Math.round(yPosition / 3 + 40);
 
                 const hex = this.hslToHex(h, s, l);
                 return hex;
@@ -106,40 +96,3 @@
         },
     }
 </script>
-<style lang="less" scoped>
-.component {
-    &.color-picker {
-        @border-radius: 5px;
-        @swatch-radius: 25px;
-        @input-width: 120px;
-
-        canvas {
-            border-radius: @border-radius;
-        }
-
-        label {
-                padding-bottom: 10px;
-            }
-
-        .input-wrapper {
-            position: relative;
-            max-width: @input-width;
-
-            
-
-            input {
-                width: 100%;
-            }
-
-            .color-swatch {
-                position: absolute;
-                width: @swatch-radius;
-                height: @swatch-radius;
-                border-radius: @swatch-radius / 2;
-                bottom: 5px;
-                right: -@swatch-radius - 15px;
-            }
-        }
-    }
-}
-</style>
