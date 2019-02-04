@@ -1,6 +1,6 @@
 {
   "name": "vue-color-picker-board",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Vue color picker component for humans",
   "main": "dist/vue-color-picker-board.js",
   "scripts": {

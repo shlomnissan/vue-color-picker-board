@@ -27,7 +27,10 @@
             },
             defaultColor: {
                 type: String,
-                default: "#4BBADD"
+                default: "#4BBADD",
+                validator: value => {
+                    return (/^#[0-9a-f]{3,6}$/i).test(value);
+                }
             },
         },
         data: function(){
