@@ -2,9 +2,9 @@
 
 A [Vue.js](https://vuejs.org/) color picker component designed for humans.
 
-Inspired by [Svbtle](https://svbtle.com/).
+Inspired by [Svbtle's](https://svbtle.com/) color picker.
 
-![Color picker board example](https://s3-us-west-2.amazonaws.com/betamark/6a363e608fc7.gif)
+![Color picker board example](https://s3-us-west-2.amazonaws.com/betamark/6a363e608fc71.gif)
 
 ## Installation
 
