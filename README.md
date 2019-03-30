@@ -35,9 +35,9 @@ import VueColorPickerBoard from 'vue-color-picker-board';
 Once installed, it can be used in a template as simply as:
 
 ```html
-<color-picker-board :defaultColor="'#00AAFF'"
-                    :width="800"
+<color-picker-board :width="800"
                     :height="100"
+                    :defaultColor="'#00AAFF'"
                     @onSelection="colorSelection">
 </color-picker-board>
 ```
@@ -46,6 +46,6 @@ Once installed, it can be used in a template as simply as:
 
   | Property value | Type | Default value | Description |
   | -------------- | ---- | ------------- | ----------- |
-  | `defaultColor` | `string` | `'#00AAFF'` | The default color shown once the component renders |
   | `width` | `number` | `800` | The width of the color picker in pixels |
   | `height` | `number` | `100` | The height of the color picker in pixels |
+  | `defaultColor` | `string` | `'#00AAFF'` | The default color shown once the component renders |
