@@ -1,4 +1,4 @@
-# Color picker board for Vue.js 
+# Color picker for Vue.js 
 
 A [Vue.js](https://vuejs.org/) color picker component designed for humans.
 
@@ -35,7 +35,7 @@ import VueColorPickerBoard from 'vue-color-picker-board';
 Once installed, it can be used in a template as simply as:
 
 ```html
-<color-picker-board default-color="#00AAFF"
+<color-picker-board :defaultColor="'#00AAFF'"
                     :width="800"
                     :height="100"
                     @onSelection="colorSelection">
