@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPickerBoard renders correctly 1`] = `
+<div
+  class="component color-picker"
+>
+  <canvas
+    height="100"
+    id="canvas"
+    style="background-color: rgb(75, 186, 221);"
+    width="800"
+  />
+</div>
+`;
