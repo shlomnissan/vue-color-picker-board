@@ -33,11 +33,11 @@ import VueColorPickerBoard from 'vue-color-picker-board';
 Once installed, it can be used in a template as simply as:
 
 ```html
-<color-picker-board :width="800"
-                    :height="100"
-                    :defaultColor="'#00AAFF'"
-                    @onSelection="colorSelection">
-</color-picker-board>
+<vue-color-picker-board :width="800"
+                        :height="100"
+                        :defaultColor="'#00AAFF'"
+                        @onSelection="colorSelection">
+</vue-color-picker-board>
 ```
 
 ## Properties
